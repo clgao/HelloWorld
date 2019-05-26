@@ -10,6 +10,10 @@ public class MyCallable implements Callable<String> {
         this.age = age;
     }
 
+    public String sayCallable(){
+        return "sayCallable";
+    }
+
     public String call() throws Exception {
         Thread.sleep(8000);
         return "返回值 年龄是：" + age;
